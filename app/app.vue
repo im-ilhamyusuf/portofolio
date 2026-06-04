@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
   title: "Ilham Yusuf — Full-Stack & Mobile Engineer",
-  ogTitle: "Ilham Yusuf — Portofolio Profesional",
+  ogTitle: "Ilham Yusuf — Full-Stack & Mobile Engineer",
   description:
     "Software Engineer berpengalaman dalam membangun aplikasi web skala besar dengan Laravel, Nuxt.js, dan React Native.",
   ogDescription:
