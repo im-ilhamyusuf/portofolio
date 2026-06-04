@@ -82,7 +82,7 @@ onMounted(() => {
     </div>
     <p
       data-aos="fade-up"
-      data-aos-delay="400"
+      data-aos-delay="600"
       class="text-base md:text-lg text-slate-600 mb-8 leading-relaxed"
     >
       Fullstack Developer dengan pengalaman lebih dari
@@ -94,45 +94,43 @@ onMounted(() => {
       untuk mendukung kebutuhan mahasiswa, dosen, organisasi, dan berbagai
       proses bisnis digital.
     </p>
-    <div data-aos="fade-up" data-aos-delay="500" class="flex flex-wrap gap-4">
-      <a
-        href="#projects"
-        class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-indigo-200 hover:shadow-lg"
-      >
-        Lihat Projek
-      </a>
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        class="px-6 py-3 border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-lg transition-all duration-300 hover:bg-slate-50"
-      >
-        Unduh CV
-      </a>
-    </div>
-
-    <div
-      data-aos="fade-up"
-      data-aos-delay="600"
-      class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12"
-    >
-      <div>
-        <h3 class="text-3xl font-bold text-indigo-600">20+</h3>
-        <p>Sistem Produksi</p>
+    <div data-aos="fade-up" data-aos-delay="700">
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="#projects"
+          class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-indigo-200 hover:shadow-lg"
+        >
+          Lihat Projek
+        </a>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          class="px-6 py-3 border border-slate-300 hover:border-slate-400 text-slate-700 font-medium rounded-lg transition-all duration-300 hover:bg-slate-50"
+        >
+          Unduh CV
+        </a>
       </div>
 
-      <div>
-        <h3 class="text-3xl font-bold text-indigo-600">8+</h3>
-        <p>Tahun Pengalaman</p>
-      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div>
+          <h3 class="text-3xl font-bold text-indigo-600">20+</h3>
+          <p>Sistem Produksi</p>
+        </div>
 
-      <div>
-        <h3 class="text-3xl font-bold text-indigo-600">10+</h3>
-        <p>Sistem Kampus</p>
-      </div>
+        <div>
+          <h3 class="text-3xl font-bold text-indigo-600">8+</h3>
+          <p>Tahun Pengalaman</p>
+        </div>
 
-      <div>
-        <h3 class="text-3xl font-bold text-indigo-600">1000+</h3>
-        <p>Pengguna Aktif</p>
+        <div>
+          <h3 class="text-3xl font-bold text-indigo-600">10+</h3>
+          <p>Sistem Kampus</p>
+        </div>
+
+        <div>
+          <h3 class="text-3xl font-bold text-indigo-600">1000+</h3>
+          <p>Pengguna Aktif</p>
+        </div>
       </div>
     </div>
   </section>

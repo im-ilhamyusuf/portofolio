@@ -1,11 +1,15 @@
 <script setup>
+import { ref } from "vue";
+
+const showOtherProjects = ref(false);
+
 const featuredProjects = [
   {
     title: "AISNET",
     category: "Academic Information System",
     year: "2022",
     description:
-      "Platform akademik terintegrasi yang menghubungkan mahasiswa, dosen, dan administrator dalam satu ekosistem digital. Mendukung manajemen perkuliahan, kontrak studi, jadwal, absensi, transkrip, administrasi akademik, pengaduan, hingga aktivitas penelitian dosen.",
+      "Platform akademik terintegrasi yang menghubungkan mahasiswa, dosen, dan administrator dalam satu ekosistem digital. Mendukung kontrak studi, jadwal perkuliahan, absensi, transkrip, administrasi akademik, pengaduan, serta berbagai layanan akademik dan penelitian dosen.",
     tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
   {
@@ -13,23 +17,31 @@ const featuredProjects = [
     category: "Enterprise Resource Planning (ERP)",
     year: "2024",
     description:
-      "Platform ERP untuk UMKM yang mengintegrasikan manajemen pembelian, inventori, produksi, penjualan, customer relationship management (CRM), dan distribusi dalam satu sistem terpusat.",
+      "Platform ERP untuk UMKM yang mengintegrasikan proses pembelian bahan baku, manajemen inventori, produksi, penjualan, hubungan pelanggan (CRM), hingga distribusi dalam satu sistem terpusat untuk mendukung operasional bisnis end-to-end.",
     tech: ["Laravel", "Bootstrap", "MySQL"],
+  },
+  {
+    title: "PESSTA V2",
+    category: "Final Project & Thesis Management System",
+    year: "2025",
+    description:
+      "Sistem manajemen tugas akhir yang mengelola seluruh siklus penyelesaian skripsi mulai dari pengajuan judul, bimbingan, seminar proposal, pendaftaran sidang, penilaian penguji, revisi, hingga proses kelulusan mahasiswa.",
+    tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
   {
     title: "SIKETIK V2",
     category: "Internship Management System",
     year: "2025",
     description:
-      "Sistem manajemen kerja praktik yang mengotomatisasi proses pengajuan, validasi, penempatan dosen pembimbing, bimbingan, sidang, penilaian, hingga pengelolaan insentif dalam satu alur kerja terintegrasi.",
-    tech: ["Laravel", "Livewire", "Booststrap", "MySQL"],
+      "Sistem manajemen kerja praktik yang mengotomatisasi proses pengajuan, validasi, penempatan dosen pembimbing, bimbingan, seminar hasil, penilaian, hingga pengelolaan insentif dosen dalam satu alur kerja terintegrasi.",
+    tech: ["Laravel", "Livewire", "Bootstrap", "MySQL"],
   },
   {
     title: "KKN",
     category: "Community Service Management Platform",
     year: "2025",
     description:
-      "Platform digital untuk mengelola seluruh siklus kegiatan Kuliah Kerja Nyata mulai dari validasi administrasi, pembentukan kelompok, pelaksanaan program kerja, pelaporan, hingga evaluasi dan penilaian peserta.",
+      "Platform digital untuk mengelola seluruh siklus kegiatan Kuliah Kerja Nyata mulai dari validasi administrasi, pembentukan kelompok, pelaksanaan program kerja, pelaporan harian dan akhir, hingga evaluasi serta penilaian peserta.",
     tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
   {
@@ -37,37 +49,25 @@ const featuredProjects = [
     category: "English Testing & Learning Platform",
     year: "2026",
     description:
-      "Platform pembelajaran dan pengujian bahasa Inggris yang mengintegrasikan simulasi ujian, penilaian otomatis, manajemen peserta, serta program short course intensif selama dua minggu untuk meningkatkan kesiapan peserta menghadapi tes kompetensi bahasa Inggris.",
+      "Platform pembelajaran dan pengujian bahasa Inggris yang mengintegrasikan simulasi tes, penilaian otomatis, manajemen peserta, sertifikasi, serta program short course intensif selama dua minggu untuk meningkatkan kompetensi peserta.",
     tech: ["Laravel", "Filament", "Nuxt.js", "Bootstrap", "MySQL"],
   },
+];
+
+const otherProjects = [
   {
     title: "SKPI V2",
     category: "Academic Document Management System",
     year: "2024",
-    description:
-      "Sistem pengelolaan Surat Keterangan Pendamping Ijazah yang mendukung proses validasi, verifikasi, penerbitan, dan arsip dokumen akademik secara digital dan terstruktur.",
-    tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
-];
-
-import { ref } from "vue";
-
-const showOtherProjects = ref(false);
-
-const otherProjects = [
   {
     title: "SILAFA",
-    category: "Faculty Administration System",
+    category: "Facility Service Management System",
     year: "2024",
   },
   {
-    title: "SITA",
-    category: "Final Project Management System",
-    year: "2023",
-  },
-  {
     title: "SIAM",
-    category: "Academic Advisory System",
+    category: "Academic Information System",
     year: "2020",
   },
   {
@@ -81,14 +81,34 @@ const otherProjects = [
     year: "2024",
   },
   {
-    title: "Sistem Organisasi",
-    category: "Organization Management System",
+    title: "KPI Award Invitation",
+    category: "Secure Digital Invitation Platform",
+    year: "2025",
+  },
+  {
+    title: "IPPPNU Center",
+    category: "Organization & Membership Management Platform",
     year: "2023",
   },
   {
-    title: "Undangan Online",
-    category: "Digital Invitation Platform",
-    year: "2023",
+    title: "ETP (Initial Release)",
+    category: "English Testing Platform",
+    year: "2021",
+  },
+  {
+    title: "SIKETIK (Initial Release)",
+    category: "Internship Management System",
+    year: "2021",
+  },
+  {
+    title: "PESSTA (Initial Release)",
+    category: "Final Project & Thesis Management System",
+    year: "2021",
+  },
+  {
+    title: "SKPI (Initial Release)",
+    category: "Academic Document Management System",
+    year: "2020",
   },
   {
     title: "AI Prediksi Kelulusan",
