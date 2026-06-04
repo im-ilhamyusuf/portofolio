@@ -3,10 +3,10 @@ useSeoMeta({
   title: "Ilham Yusuf — Full-Stack & Mobile Engineer",
   ogTitle: "Ilham Yusuf — Full-Stack & Mobile Engineer",
   description:
-    "Software Engineer berpengalaman dalam membangun aplikasi web skala besar dengan Laravel, Nuxt.js, dan React Native.",
+    "Fullstack Developer dengan pengalaman membangun lebih dari 20 aplikasi produksi untuk sektor pendidikan, organisasi, dan bisnis. Berfokus pada pengembangan sistem yang scalable, efisien, dan mampu menyederhanakan proses bisnis melalui solusi digital.",
   ogDescription:
-    "Software Engineer berpengalaman dalam membangun aplikasi web skala besar dengan Laravel, Nuxt.js, dan React Native.",
-  ogImage: "/og-image.jpg", // Siapkan gambar screenshot web Anda ukuran 1200x630 di folder public
+    "Fullstack Developer dengan pengalaman membangun lebih dari 20 aplikasi produksi untuk sektor pendidikan, organisasi, dan bisnis. Berfokus pada pengembangan sistem yang scalable, efisien, dan mampu menyederhanakan proses bisnis melalui solusi digital.",
+  ogImage: "/og-image.png", // Siapkan gambar screenshot web Anda ukuran 1200x630 di folder public
   twitterCard: "summary_large_image",
 });
 </script>
