@@ -1,7 +1,13 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const words = ["Full-Stack.", "Mobile Apps.", "Sistem Ekstra Cepat."];
+const words = [
+  "Enterprise Systems.",
+  "Web Applications.",
+  "Mobile Applications.",
+  "Workflow Automation.",
+  "Digital Experiences.",
+];
 const displayText = ref("");
 const wordIndex = ref(0);
 const isDeleting = ref(false);
@@ -61,7 +67,7 @@ onMounted(() => {
       data-aos-delay="300"
       class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-400 tracking-tight mb-6 lg:whitespace-nowrap overflow-visible leading-tight lg:leading-normal"
     >
-      Membangun aplikasi & solusi
+      Merancang & Mengembangkan
       <span
         class="text-indigo-600 block lg:inline-block lg:ml-2 whitespace-nowrap select-none"
       >
@@ -99,6 +105,32 @@ onMounted(() => {
       >
         Unduh CV
       </a>
+    </div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-delay="600"
+      class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12"
+    >
+      <div>
+        <h3 class="text-3xl font-bold text-indigo-600">10+</h3>
+        <p>Sistem Produksi</p>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-indigo-600">20+</h3>
+        <p>Modul Bisnis</p>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-indigo-600">1000+</h3>
+        <p>Pengguna</p>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-indigo-600">5+</h3>
+        <p>Tahun Pengalaman</p>
+      </div>
     </div>
   </section>
 </template>
