@@ -45,6 +45,11 @@ const skillGroups = [
           "bg-pink-50 text-pink-700 border-pink-200 hover:bg-pink-100 hover:border-pink-300",
       },
       {
+        name: "Filament",
+        style:
+          "bg-red-50 text-red-700 border-red-200 hover:bg-red-100 hover:border-red-300",
+      },
+      {
         name: "Django",
         style:
           "bg-teal-50 text-teal-700 border-teal-200 hover:bg-teal-100 hover:border-teal-300",
@@ -85,21 +90,6 @@ const skillGroups = [
         name: "MySQL",
         style:
           "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100 hover:border-amber-300",
-      },
-      {
-        name: "PostgreSQL",
-        style:
-          "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 hover:border-blue-300",
-      },
-      {
-        name: "Linux",
-        style:
-          "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:border-slate-300",
-      },
-      {
-        name: "Nginx",
-        style:
-          "bg-lime-50 text-lime-700 border-lime-200 hover:bg-lime-100 hover:border-lime-300",
       },
     ],
   },

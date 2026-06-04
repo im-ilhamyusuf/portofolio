@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Tentang Saya", href: "#about" },
   { name: "Projek", href: "#projects" },
   { name: "Technology Expertise", href: "#skills" },
+  { name: "Kontak", href: "#contact" },
 ];
 
 // Deteksi scroll untuk menambahkan efek bayangan (shadow) pada navbar

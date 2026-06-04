@@ -1,164 +1,114 @@
 <script setup>
-const projects = [
+const featuredProjects = [
   {
     title: "AISNET",
     category: "Academic Information System",
     year: "2022",
     description:
-      "Sistem informasi akademik terintegrasi untuk mahasiswa, dosen, dan administrator. Mendukung kontrak perkuliahan, jadwal, absensi, transkrip, administrasi akademik, pengaduan, dan penelitian dosen.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
+      "Platform akademik terintegrasi yang menghubungkan mahasiswa, dosen, dan administrator dalam satu ekosistem digital. Mendukung manajemen perkuliahan, kontrak studi, jadwal, absensi, transkrip, administrasi akademik, pengaduan, hingga aktivitas penelitian dosen.",
+    tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
   {
-    title: "KKN",
-    category: "Kuliah Kerja Nyata Management",
-    year: "2025",
+    title: "PPIC",
+    category: "Enterprise Resource Planning (ERP)",
+    year: "2024",
     description:
-      "Sistem pengelolaan KKN mulai dari validasi keuangan, pendaftaran, plotting kelompok, program kerja, laporan harian, laporan akhir, hingga penilaian.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
+      "Platform ERP untuk UMKM yang mengintegrasikan manajemen pembelian, inventori, produksi, penjualan, customer relationship management (CRM), dan distribusi dalam satu sistem terpusat.",
+    tech: ["Laravel", "Bootstrap", "MySQL"],
   },
   {
     title: "SIKETIK V2",
     category: "Internship Management System",
     year: "2025",
     description:
-      "Sistem kerja praktik yang mengelola proses pengajuan, validasi, bimbingan, sidang, penilaian, hingga pencairan insentif dosen pembimbing dan penguji.",
-    tech: ["Laravel", "Livewire", "MySQL"],
+      "Sistem manajemen kerja praktik yang mengotomatisasi proses pengajuan, validasi, penempatan dosen pembimbing, bimbingan, sidang, penilaian, hingga pengelolaan insentif dalam satu alur kerja terintegrasi.",
+    tech: ["Laravel", "Livewire", "Booststrap", "MySQL"],
+  },
+  {
+    title: "KKN",
+    category: "Community Service Management Platform",
+    year: "2025",
+    description:
+      "Platform digital untuk mengelola seluruh siklus kegiatan Kuliah Kerja Nyata mulai dari validasi administrasi, pembentukan kelompok, pelaksanaan program kerja, pelaporan, hingga evaluasi dan penilaian peserta.",
+    tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
   {
     title: "ETP V2",
-    category: "Tracer Study System",
+    category: "English Testing & Learning Platform",
     year: "2026",
     description:
-      "Platform tracer study alumni untuk pengumpulan data lulusan, evaluasi kompetensi, dan analisis karier alumni.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
+      "Platform pembelajaran dan pengujian bahasa Inggris yang mengintegrasikan simulasi ujian, penilaian otomatis, manajemen peserta, serta program short course intensif selama dua minggu untuk meningkatkan kesiapan peserta menghadapi tes kompetensi bahasa Inggris.",
+    tech: ["Laravel", "Filament", "Nuxt.js", "Bootstrap", "MySQL"],
   },
   {
     title: "SKPI V2",
-    category: "Academic Document System",
+    category: "Academic Document Management System",
     year: "2024",
     description:
-      "Sistem pengelolaan Surat Keterangan Pendamping Ijazah yang mendukung validasi, verifikasi, dan penerbitan dokumen akademik.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
+      "Sistem pengelolaan Surat Keterangan Pendamping Ijazah yang mendukung proses validasi, verifikasi, penerbitan, dan arsip dokumen akademik secara digital dan terstruktur.",
+    tech: ["Laravel", "Vue.js", "Bootstrap", "MySQL"],
   },
+];
+
+import { ref } from "vue";
+
+const showOtherProjects = ref(false);
+
+const otherProjects = [
   {
     title: "SILAFA",
     category: "Faculty Administration System",
     year: "2024",
-    description:
-      "Sistem layanan administrasi fakultas berbasis digital untuk mempercepat proses pengajuan dan persetujuan dokumen.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "SITA",
     category: "Final Project Management System",
     year: "2023",
-    description:
-      "Sistem pengelolaan tugas akhir mahasiswa mulai dari pengajuan judul, bimbingan, seminar, hingga sidang.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "SIAM",
     category: "Academic Advisory System",
     year: "2020",
-    description:
-      "Sistem perwalian online yang memudahkan komunikasi dan monitoring akademik antara dosen wali dan mahasiswa.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "Hotline Pengaduan",
     category: "Complaint Management System",
     year: "2021",
-    description:
-      "Platform pengaduan online yang memfasilitasi pelaporan dan tindak lanjut berbagai keluhan secara terstruktur.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
-  },
-  {
-    title: "PIC",
-    category: "Person In Charge Management System",
-    year: "2024",
-    description:
-      "Sistem pengelolaan penanggung jawab kegiatan dan monitoring progres pekerjaan dalam organisasi.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "Ekonomi Kreatif",
     category: "Business Management Platform",
     year: "2024",
-    description:
-      "Platform digital untuk mendukung pengelolaan program dan aktivitas ekonomi kreatif.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "Sistem Organisasi",
     category: "Organization Management System",
     year: "2023",
-    description:
-      "Sistem informasi organisasi yang mendukung administrasi, pengelolaan anggota, dan aktivitas organisasi.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "Undangan Online",
     category: "Digital Invitation Platform",
     year: "2023",
-    description:
-      "Platform pembuatan dan pengelolaan undangan digital dengan dukungan RSVP dan berbagi melalui media sosial.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
-  },
-  {
-    title: "ETP V1",
-    category: "Tracer Study System",
-    year: "2021",
-    description:
-      "Versi awal sistem tracer study untuk pengumpulan data alumni dan evaluasi lulusan.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
-  },
-  {
-    title: "SIKETIK V1",
-    category: "Internship Management System",
-    year: "2021",
-    description:
-      "Versi awal sistem kerja praktik yang mendukung proses administrasi dan bimbingan mahasiswa.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
-  },
-  {
-    title: "SKPI V1",
-    category: "Academic Document System",
-    year: "2020",
-    description:
-      "Versi awal sistem Surat Keterangan Pendamping Ijazah berbasis web.",
-    tech: ["Laravel", "Vue.js", "MySQL"],
   },
   {
     title: "AI Prediksi Kelulusan",
     category: "Artificial Intelligence",
     year: "2020",
-    description:
-      "Sistem prediksi kelulusan mahasiswa menggunakan metode Artificial Neural Network untuk mendukung pengambilan keputusan akademik.",
-    tech: ["Python", "ANN", "Machine Learning", "MySQL"],
   },
   {
     title: "AI Prediksi Nilai UN",
     category: "Artificial Intelligence",
     year: "2020",
-    description:
-      "Sistem prediksi hasil Ujian Nasional menggunakan algoritma Naive Bayes.",
-    tech: ["Python", "Naive Bayes", "Machine Learning", "MySQL"],
   },
   {
     title: "Mobile E-Perpustakaan",
     category: "Mobile Application",
     year: "2019",
-    description:
-      "Aplikasi perpustakaan digital berbasis mobile yang memudahkan pencarian dan peminjaman koleksi.",
-    tech: ["React Native", "Laravel", "MySQL"],
   },
   {
     title: "Web E-Perpustakaan",
     category: "Library Information System",
     year: "2018",
-    description:
-      "Sistem informasi perpustakaan berbasis web untuk pengelolaan koleksi, anggota, dan transaksi peminjaman.",
-    tech: ["CodeIgniter", "MySQL"],
   },
 ];
 </script>
@@ -182,11 +132,11 @@ const projects = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div
-          v-for="(project, index) in projects"
+          v-for="(project, index) in featuredProjects"
           :key="index"
           data-aos="fade-up"
           :data-aos-delay="index * 100"
-          class="bg-white border border-slate-200 rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-slate-300 flex flex-col justify-between group"
+          class="bg-white border border-slate-200 rounded-xl p-6 transition-all duration-300 shadow-sm hover:shadow-md hover:border-slate-300 flex flex-col justify-between group"
         >
           <div>
             <h3
@@ -200,6 +150,9 @@ const projects = [
                 {{ project.title }}
               </a>
             </h3>
+            <p class="text-xs text-slate-500 mb-3">
+              {{ project.category }}
+            </p>
             <p class="text-slate-600 text-sm leading-relaxed mb-6">
               {{ project.description }}
             </p>
@@ -217,6 +170,69 @@ const projects = [
           </div>
         </div>
       </div>
+
+      <div data-aos="fade-up" class="flex justify-center mt-10">
+        <button
+          @click="showOtherProjects = !showOtherProjects"
+          class="group flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-medium transition-all duration-300"
+        >
+          <span>
+            {{
+              showOtherProjects
+                ? "Sembunyikan proyek lainnya"
+                : `Tampilkan ${otherProjects.length} proyek lainnya`
+            }}
+          </span>
+
+          <svg
+            class="w-4 h-4 transition-transform duration-300"
+            :class="{ 'rotate-180': showOtherProjects }"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <Transition
+        enter-active-class="transition-all duration-500 ease-out"
+        enter-from-class="opacity-0 max-h-0"
+        enter-to-class="opacity-100 max-h-[1000px]"
+        leave-active-class="transition-all duration-300 ease-in"
+        leave-from-class="opacity-100 max-h-[1000px]"
+        leave-to-class="opacity-0 max-h-0"
+      >
+        <div v-if="showOtherProjects" class="overflow-hidden mt-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              v-for="project in otherProjects"
+              :key="project.title"
+              class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-300"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="font-semibold text-slate-900">
+                  {{ project.title }}
+                </h4>
+
+                <span class="text-xs text-slate-400">
+                  {{ project.year }}
+                </span>
+              </div>
+
+              <p class="text-xs text-slate-500">
+                {{ project.category }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </Transition>
     </div>
   </section>
 </template>

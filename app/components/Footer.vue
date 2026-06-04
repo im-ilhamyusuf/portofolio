@@ -4,7 +4,6 @@
     data-aos="fade-up"
     class="border-y border-slate-100 py-20 overflow-hidden"
   >
-    >
     <div class="max-w-5xl mx-auto px-6 text-center">
       <!-- Status Badge -->
       <div
