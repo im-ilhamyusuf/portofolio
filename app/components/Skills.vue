@@ -1,17 +1,17 @@
 <script setup>
 const skillGroups = [
   {
-    category: "Frontend & Frameworks",
+    category: "Frontend Development",
     skills: [
-      {
-        name: "Nuxt.js",
-        style:
-          "bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300",
-      },
       {
         name: "Vue.js",
         style:
           "bg-green-50 text-green-700 border-green-200 hover:bg-green-100 hover:border-green-300",
+      },
+      {
+        name: "Nuxt.js",
+        style:
+          "bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300",
       },
       {
         name: "Tailwind CSS",
@@ -19,19 +19,30 @@ const skillGroups = [
           "bg-sky-50 text-sky-700 border-sky-200 hover:bg-sky-100 hover:border-sky-300",
       },
       {
-        name: "Bootstrap CSS",
+        name: "Bootstrap",
         style:
           "bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100 hover:border-purple-300",
       },
+      {
+        name: "JavaScript",
+        style:
+          "bg-yellow-50 text-yellow-700 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-300",
+      },
     ],
   },
+
   {
-    category: "Backend & Frameworks",
+    category: "Backend Development",
     skills: [
       {
         name: "Laravel",
         style:
           "bg-red-50 text-red-700 border-red-200 hover:bg-red-100 hover:border-red-300",
+      },
+      {
+        name: "Livewire",
+        style:
+          "bg-pink-50 text-pink-700 border-pink-200 hover:bg-pink-100 hover:border-pink-300",
       },
       {
         name: "Django",
@@ -43,20 +54,83 @@ const skillGroups = [
         style:
           "bg-orange-50 text-orange-700 border-orange-200 hover:bg-orange-100 hover:border-orange-300",
       },
+      {
+        name: "REST API",
+        style:
+          "bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100 hover:border-indigo-300",
+      },
     ],
   },
+
   {
     category: "Mobile Development",
     skills: [
+      {
+        name: "Flutter",
+        style:
+          "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 hover:border-blue-300",
+      },
       {
         name: "React Native",
         style:
           "bg-cyan-50 text-cyan-700 border-cyan-200 hover:bg-cyan-100 hover:border-cyan-300",
       },
+    ],
+  },
+
+  {
+    category: "Database & Infrastructure",
+    skills: [
       {
-        name: "Flutter",
+        name: "MySQL",
+        style:
+          "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100 hover:border-amber-300",
+      },
+      {
+        name: "PostgreSQL",
         style:
           "bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 hover:border-blue-300",
+      },
+      {
+        name: "Linux",
+        style:
+          "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:border-slate-300",
+      },
+      {
+        name: "Nginx",
+        style:
+          "bg-lime-50 text-lime-700 border-lime-200 hover:bg-lime-100 hover:border-lime-300",
+      },
+    ],
+  },
+
+  {
+    category: "Tools & Workflow",
+    skills: [
+      {
+        name: "Git",
+        style:
+          "bg-orange-50 text-orange-700 border-orange-200 hover:bg-orange-100 hover:border-orange-300",
+      },
+      {
+        name: "GitHub",
+        style:
+          "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 hover:border-slate-300",
+      },
+      {
+        name: "GitLab",
+        style:
+          "bg-orange-50 text-orange-700 border-orange-200 hover:bg-orange-100 hover:border-orange-300",
+      },
+      {
+        name: "Postman",
+        style:
+          "bg-orange-50 text-orange-700 border-orange-200 hover:bg-orange-100 hover:border-orange-300",
+      },
+      {
+        name: "Figma",
+        style:
+          "bg-pink-50 text-pink-700 border-pink-200 hover:bg-pink-100 hover:border-pink-300",
       },
     ],
   },
@@ -75,14 +149,12 @@ const skillGroups = [
           class="text-2xl md:text-3xl font-bold text-slate-900 mb-12 flex items-center gap-4 group"
         >
           <span class="text-indigo-600 font-mono text-xl">03.</span>
-          Tech Stack & Keahlian
+          Technology Expertise
           <div
             class="hidden sm:block h-px bg-gradient-to-r from-slate-200 to-transparent flex-1 ml-2 group-hover:from-indigo-200 transition-all duration-500"
           ></div>
         </h2>
-        <p
-          class="text-slate-500 text-sm md:text-base max-w-2xl mb-12 leading-relaxed"
-        >
+        <p class="text-slate-500 text-sm md:text-base mb-12 leading-relaxed">
           Berikut adalah beberapa teknologi, bahasa pemrograman, dan framework
           yang biasa saya gunakan untuk membangun produk digital berskala
           produksi.

@@ -6,9 +6,9 @@ const isMenuOpen = ref(false);
 const isScrolled = ref(false);
 
 const navLinks = [
-  { name: "Pengalaman", href: "#experience" },
+  { name: "Tentang Saya", href: "#about" },
   { name: "Projek", href: "#projects" },
-  { name: "Tech Stack", href: "#skills" },
+  { name: "Technology Expertise", href: "#skills" },
 ];
 
 // Deteksi scroll untuk menambahkan efek bayangan (shadow) pada navbar

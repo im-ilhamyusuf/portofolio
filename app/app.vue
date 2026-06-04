@@ -15,7 +15,7 @@ useSeoMeta({
   <Navbar />
   <NuxtLayout>
     <Hero />
-    <Experience />
+    <About />
     <Projects />
     <Skills />
     <Footer />

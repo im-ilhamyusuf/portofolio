@@ -2,11 +2,11 @@
 import { ref, onMounted } from "vue";
 
 const words = [
-  "Enterprise Systems.",
-  "Web Applications.",
-  "Mobile Applications.",
+  "Academic Information Systems.",
+  "Enterprise Applications.",
   "Workflow Automation.",
-  "Digital Experiences.",
+  "Business Solutions.",
+  "Digital Platforms.",
 ];
 const displayText = ref("");
 const wordIndex = ref(0);
@@ -62,34 +62,37 @@ onMounted(() => {
     >
       Ilham Yusuf<span class="text-indigo-600">.</span>
     </h1>
-    <h2
-      data-aos="fade-up"
-      data-aos-delay="300"
-      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-400 tracking-tight mb-6 lg:whitespace-nowrap overflow-visible leading-tight lg:leading-normal"
-    >
-      Merancang & Mengembangkan
-      <span
-        class="text-indigo-600 block lg:inline-block lg:ml-2 whitespace-nowrap select-none"
+    <div class="mb-6">
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="300"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-400"
       >
-        {{ displayText }}<span class="animate-pulse font-light">|</span>
-      </span>
-    </h2>
+        Merancang & Mengembangkan
+      </h2>
+
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="500"
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-indigo-600 mt-2"
+      >
+        {{ displayText }}
+        <span class="animate-pulse font-light">|</span>
+      </h2>
+    </div>
     <p
       data-aos="fade-up"
       data-aos-delay="400"
-      class="text-base md:text-lg text-slate-600 max-w-3xl mb-8 leading-relaxed"
+      class="text-base md:text-lg text-slate-600 mb-8 leading-relaxed"
     >
-      Seorang
-      <span class="text-slate-900 font-semibold">Software Engineer</span> dengan
-      spesialisasi utama pada ekosistem
-      <span class="text-indigo-600 font-medium">Nuxt.js</span> dan
-      <span class="text-indigo-600 font-medium">Laravel</span>. Saya
-      berpengalaman merancang arsitektur web modern menggunakan
-      <span class="text-slate-900 font-medium">Vue, Django,</span> dan
-      <span class="text-slate-900 font-medium">CodeIgniter</span>, serta
-      membangun aplikasi mobile lintas platform yang responsif menggunakan
-      <span class="text-slate-900 font-medium">React Native</span> dan
-      <span class="text-slate-900 font-medium">Flutter</span>.
+      Fullstack Developer dengan pengalaman lebih dari
+      <span class="font-semibold text-slate-900">8 tahun</span>
+      dalam membangun sistem informasi akademik, administrasi, organisasi, dan
+      aplikasi bisnis berbasis web. Telah mengembangkan lebih dari
+      <span class="font-semibold text-slate-900">20 aplikasi produksi</span>
+      menggunakan Laravel, Vue, Nuxt, Livewire, dan teknologi modern lainnya
+      untuk mendukung kebutuhan mahasiswa, dosen, organisasi, dan berbagai
+      proses bisnis digital.
     </p>
     <div data-aos="fade-up" data-aos-delay="500" class="flex flex-wrap gap-4">
       <a
@@ -113,23 +116,23 @@ onMounted(() => {
       class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12"
     >
       <div>
-        <h3 class="text-3xl font-bold text-indigo-600">10+</h3>
+        <h3 class="text-3xl font-bold text-indigo-600">20+</h3>
         <p>Sistem Produksi</p>
       </div>
 
       <div>
-        <h3 class="text-3xl font-bold text-indigo-600">20+</h3>
-        <p>Modul Bisnis</p>
+        <h3 class="text-3xl font-bold text-indigo-600">8+</h3>
+        <p>Tahun Pengalaman</p>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold text-indigo-600">10+</h3>
+        <p>Sistem Kampus</p>
       </div>
 
       <div>
         <h3 class="text-3xl font-bold text-indigo-600">1000+</h3>
-        <p>Pengguna</p>
-      </div>
-
-      <div>
-        <h3 class="text-3xl font-bold text-indigo-600">5+</h3>
-        <p>Tahun Pengalaman</p>
+        <p>Pengguna Aktif</p>
       </div>
     </div>
   </section>
