@@ -13,7 +13,7 @@ export default defineNuxtConfig({
             "Portfolio of Ilham Yusuf, a passionate Software Engineer specializing in Full-Stack Development.",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
     },
   },
 });
